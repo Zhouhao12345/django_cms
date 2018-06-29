@@ -1,0 +1,7 @@
+django_cms:
+   build: .
+   ports:
+    - 8000:8000
+   restart: always
+   external_links:
+    - dockermysqlmaster_mysql_master_1:db 
